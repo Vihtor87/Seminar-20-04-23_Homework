@@ -1,10 +1,13 @@
-﻿// Напишите программу, которая выводит случайное трехзначное число и удаляет вторую цифру этого числа.
+﻿Main(); // Программа, которая выводит случайное трехзначное число и удаляет вторую цифру этого числа.
 
-int rand = new Random().Next(100, 1000);
-Console.WriteLine("Рандомное число: " + rand);
-int a = FirstInNum(rand);
-int b = EndInNum(rand);
-Console.WriteLine(a * 10 + b);
+void Main()
+{
+    int rand = new Random().Next(100, 1000);
+    Console.WriteLine("Рандомное число: " + rand);
+    int a = FirstInNum(rand);
+    int b = EndInNum(rand);
+    Console.WriteLine(a * 10 + b);
+}
 
 int FirstInNum(int num) // первая цифра рандомного числа
 {
