@@ -1,5 +1,7 @@
-﻿// Напишите программу, которая выводит третью цифру числа или сообщает, что её нет!
+﻿Main(); // Программа, которая выводит третью цифру числа или сообщает, что её нет!
 
+void Main()
+{
 Console.Write("Введите число: ");
 int n = int.Parse(Console.ReadLine()!);
 FindThirdInNum(n);
@@ -14,4 +16,5 @@ void FindThirdInNum(int num)
     {
         Console.WriteLine("У числа " + num + " нет тетьей цифры");
     }
+}
 }
