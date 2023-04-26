@@ -22,7 +22,7 @@ void Main()
         }
         else
         {
-            return num * 10;
+            return num * 10; // КАК СДЕЛАТЬ КОНВЕРТАЦИЮ string в int??? Если я хочу вывести в else "Число двезначное!"
         }
     }
 }
