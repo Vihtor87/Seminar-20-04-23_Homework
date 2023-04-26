@@ -5,23 +5,17 @@ void Main()
 {
     Console.Write("Введите трёхзначное число: ");
     int n = int.Parse(Console.ReadLine()!);
-    Console.Write(FindSecondInNum(n));
-
-    int FindSecondInNum(int num) // Берём вторую цифру из введённого числа
-    {
-        int x = num / 10 % 10;
-        return x;
-    }
-}
-
-    void CheckNum12Or123Or1234(int num)
+    CheckNum12Or123Or1234(n);
+ 
+    void CheckNum12Or123Or1234(int num) // Проверяем, что число именно трёхзначное
     {
         if (num > 99 & num < 1000)
         {
-            Console.Write(num);
+            Console.WriteLine("Вторая цифра трёхзначного числа " + num / 10 % 10);
         }
         else
         {
-            Console.Write("Введите трёхзначное число!"); // Как конвентировть string в int, чтобы вывести сообщение с ошибкой при вводе
+            Console.Write("Введите трёхзначное число!");
         }
     }
+}
