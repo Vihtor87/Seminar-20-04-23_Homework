@@ -2,19 +2,19 @@
 
 void Main()
 {
-Console.Write("Введите число: ");
-int n = int.Parse(Console.ReadLine()!);
-FindThirdInNum(n);
+    Console.Write("Введите число: ");
+    int n = int.Parse(Console.ReadLine()!);
+    FindThirdInNum(n);
 
-void FindThirdInNum(int num)
-{
-    if (num > 99)
+    void FindThirdInNum(int num)
     {
-        Console.WriteLine("Третья цифра числа " + num / 100 % 10);
+        if (num > 99)
+        {
+            Console.WriteLine("Третья цифра числа " + num / 100 % 10);
+        }
+        else
+        {
+            Console.WriteLine("У числа " + num + " нет тетьей цифры");
+        }
     }
-    else
-    {
-        Console.WriteLine("У числа " + num + " нет тетьей цифры");
-    }
-}
 }
