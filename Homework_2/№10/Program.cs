@@ -4,7 +4,7 @@ Main(); // Программа, которая принимает на вход �
 void Main()
 {
     Console.Write("Введите трёхзначное число: ");
-    int n = CheckNum123(int.Parse(Console.ReadLine()!));
+    int n = int.Parse(Console.ReadLine()!);
     Console.Write(FindSecondInNum(n));
 
     int FindSecondInNum(int num) // Берём вторую цифру из введённого числа
@@ -12,17 +12,16 @@ void Main()
         int x = num / 10 % 10;
         return x;
     }
+}
 
-
-    int CheckNum123(int num)
+    void CheckNum12Or123Or1234(int num)
     {
         if (num > 99 & num < 1000)
         {
-            return num;
+            Console.Write(num);
         }
         else
         {
-            return num * 10; // КАК СДЕЛАТЬ КОНВЕРТАЦИЮ string в int??? Если я хочу вывести в else "Число двезначное!"
+            Console.Write("Введите трёхзначное число!"); // Как конвентировть string в int, чтобы вывести сообщение с ошибкой при вводе
         }
     }
-}
