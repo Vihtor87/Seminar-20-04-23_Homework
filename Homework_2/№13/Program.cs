@@ -1,17 +1,17 @@
 ﻿// Напишите программу, которая выводит третью цифру числа или сообщает, что её нет!
 
-// Console.Write("Введите число: ");
+Console.Write("Введите число: ");
+int n = int.Parse(Console.ReadLine()!);
+FindThirdInNum(n);
 
-
-// int FindThirdInNum(int num)
-// {
-//     if (num > 100)
-//     {
-//         x = num / 100;
-//         return x;
-//     }
-//     else
-//     {
-//         return "Третьей цифры нет!";
-//     }
-// }
+void FindThirdInNum(int num)
+{
+    if (num > 99)
+    {
+        Console.WriteLine("Третья цифра числа " + num / 100 % 10);
+    }
+    else
+    {
+        Console.WriteLine("У числа " + num + " нет тетьей цифры");
+    }
+}
