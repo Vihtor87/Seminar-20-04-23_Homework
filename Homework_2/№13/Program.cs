@@ -12,9 +12,13 @@ void Main()
         {
             Console.WriteLine("Третья цифра числа " + num % 10);
         }
+        else if (num > 1000)
+        {
+            Console.WriteLine("Слишком много цифр! Введите трёхзначное число.");
+        }
         else
         {
-            Console.WriteLine("Введите трёхзначное число!");
+            Console.WriteLine("Третьей цифры нет! Введите трёхзначное число.");
         }
     }
 }
