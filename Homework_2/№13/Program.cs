@@ -8,13 +8,13 @@ void Main()
 
     void FindThirdInNum(int num)
     {
-        if (num > 99)
+        if (num > 99 & num < 1000)
         {
-            Console.WriteLine("Третья цифра числа " + num / 100 % 10);
+            Console.WriteLine("Третья цифра числа " + num % 10);
         }
         else
         {
-            Console.WriteLine("У числа " + num + " нет тетьей цифры");
+            Console.WriteLine("Введите трёхзначное число!");
         }
     }
 }
