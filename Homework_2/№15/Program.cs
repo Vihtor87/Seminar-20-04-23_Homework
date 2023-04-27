@@ -14,7 +14,7 @@ void Main()
         }
         else if (num == 5)
         {
-            Console.WriteLine("FrIdYa!");
+            Console.WriteLine("FrIdAy!");
         }
         else if (num == 6 || num == 7)
         {
