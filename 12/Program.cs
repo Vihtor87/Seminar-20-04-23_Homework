@@ -12,11 +12,17 @@ int Prompt(string message)
     return number;
 }
 void SquareNum(int num)
-{
-    int start = 1;
-    while (start <= num)
-    {
-        Console.Write(Math.Pow(start, 2) + " ");
-        start++;
-    }
-}
+{                                                                   
+    for (int i = 1; i <= num; i++)                                  
+    {                                                               
+        Console.Write(Math.Pow(i, 2) + " ");                        
+    }                                                               
+}                                                                   
+// or:
+//void SquareNum(int num)
+// int start = 1;
+// while (start <= num)
+// {
+// Console.Write(Math.Pow(start, 2) + " ");
+// start++;
+// }
