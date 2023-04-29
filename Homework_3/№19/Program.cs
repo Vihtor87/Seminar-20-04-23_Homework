@@ -17,7 +17,7 @@ int Prompt(string message)
 int FindMirrorNumber(int x)
 {
     int x1 = x * 10;
-    while (((x1 /= 10) != 0))
+    while ((x1 /= 10) != 0)
     {
         int result = (x1 % 10);
         return result;
