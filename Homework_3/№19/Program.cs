@@ -1,10 +1,11 @@
-﻿//  Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-// 14212 -> нет
-// 23432 -> да
-// 12821 -> да
+﻿/*  Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+14212 -> нет
+23432 -> да
+12821 -> да */
 
 int number = Prompt("Введите число: ");
 int numberMirr = FindMirrorNumber(number);
+// Console.Write($"Зеркальное число {numberMirr}"); для проверки работы зеркала
 FindPalindron(number, numberMirr);
 
 int Prompt(string message)
@@ -16,12 +17,13 @@ int Prompt(string message)
 
 int FindMirrorNumber(int x)
 {
-    int x1 = x * 10;
-    while ((x1 /= 10) != 0)
+    int result = 0;
+    while (x > 0)
     {
-        int result = (x1 % 10);
-        return result;
+        result = result * 10 + x % 10;
+        x /= 10;
     }
+    return result;
 }
 
 void FindPalindron(int a, int b)
