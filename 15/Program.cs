@@ -5,7 +5,7 @@
 */
 
 int n = Prompt();
-Console.Write($"Произведение чисел от 1 до {n} равна {GetMult(n)}");
+Console.Write($"Произведение чисел от 1 до {n} равно {GetMult(n)}");
 
 int Prompt()
 {
