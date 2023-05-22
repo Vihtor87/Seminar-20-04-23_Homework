@@ -17,8 +17,6 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-int[] array = GetArray(123, -10, 150);
-
 void GetNum(int[] arr, int MinNum, int MaxNum)
 {
 int CountNeadNum = 0;
@@ -34,4 +32,5 @@ foreach (int el in arr)
     Console.WriteLine($"Количество чисел = {CountNeadNum}");
 }
 
+int[] array = GetArray(123, -10, 150);
 GetNum(array, 10, 99);

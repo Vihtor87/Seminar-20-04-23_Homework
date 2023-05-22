@@ -18,8 +18,6 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-int[] array = GetArray(5, -2, 3);
-
 Console.WriteLine();
 
 void GetNum(int[] arr)
@@ -35,4 +33,5 @@ void GetNum(int[] arr)
     Console.WriteLine("NO");
 }
 
+int[] array = GetArray(5, -2, 3);
 GetNum(array);

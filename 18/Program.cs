@@ -14,6 +14,8 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
+Console.WriteLine();
+
 void NewArray(int[] arr)
 {
     for (int i = 0; i < 4; i++)
@@ -24,7 +26,5 @@ void NewArray(int[] arr)
 }
 
 int[] array = (GetArray(4, -10, 10));
-
-Console.WriteLine();
 
 NewArray(array);
