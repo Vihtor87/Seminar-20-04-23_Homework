@@ -10,7 +10,7 @@ int[] GetArray(int size)
     int[] res = new int[size];
     for (int i = 0; i < size; i++)
     {
-        res[i] = new Random().Next(99, 1000);
+        res[i] = new Random().Next(100, 1000);
         Console.Write($"{res[i]} ");
     }
     return res;
