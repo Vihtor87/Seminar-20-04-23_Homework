@@ -24,7 +24,7 @@ void FindListFibon(int x)
     {
         numFibon[i] = numFibon[i - 2] + numFibon[i - 1]; 
     }
-    Console.Write(String.Join(" ", numFibon));;
+    Console.Write(String.Join(" ", numFibon));
 }
 
 FindListFibon(N);
