@@ -11,7 +11,8 @@
 int[,] arr = GetArray();
 PrintArray(arr);
 double[] result = FindSummInArray(arr);
-Console.Write(String.Join(" ", result));
+Console.WriteLine();
+Console.Write(String.Join(" | ", result));
 
 int[,] GetArray()
 {
