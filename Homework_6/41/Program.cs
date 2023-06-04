@@ -5,17 +5,18 @@
 1, -7, 567, 89, 223-> 3
 */
 Console.Clear();
+string num = Prompt();
+FindPositivNum(num);
 
-string Prompt(string message)
+string Prompt()
 {
-    Console.Write(message);
-    string value = Console.ReadLine()!;
-    return value;
+    Console.Write("Введите числа через пробел: ");
+    return Console.ReadLine()!;
 }
 
 void FindPositivNum(string words)
 {
-    string[] text = words.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+    string[] text = words.Split(" ", StringSplitOptions.RemoveEmptyEntries);
     int count = 0;
     int N = 0;
     foreach (string s in text)
@@ -25,6 +26,3 @@ void FindPositivNum(string words)
     }
     Console.WriteLine($"Количество чисел больше нуля -> {count}.");
 }
-
-string num = Prompt("Введите числа через пробел: ");
-FindPositivNum(num);
