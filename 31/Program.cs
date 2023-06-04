@@ -41,10 +41,9 @@ void PrintArray(int[,] inArray)
 
 void ExchangeRows(int[,] inArr)
 {
-    int temp = 0;
     for (int j = 0; j < inArr.GetLength(1); j++)
     {
-        temp = inArr[(inArr.GetLength(0) - 1), j];
+        int temp = inArr[(inArr.GetLength(0) - 1), j];
         inArr[(inArr.GetLength(0) - 1), j] = arr[0, j];
         inArr[0, j] = temp;
     }
@@ -52,10 +51,9 @@ void ExchangeRows(int[,] inArr)
 
 void ExchangeColumns(int[,] inArr)
 {
-    int temp = 0;
     for (int i = 0; i < inArr.GetLength(0); i++)
     {
-        temp = inArr[i, inArr.GetLength(1) - 1];
+        int temp = inArr[i, inArr.GetLength(1) - 1];
         inArr[i, inArr.GetLength(1) - 1] = inArr[i, 0];
         inArr[i, 0] = temp;
     }
